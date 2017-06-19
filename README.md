@@ -1,3 +1,10 @@
+# 修改内容
+修改支持androidannotions使用
+```
+@Router(value = "inputLogin", isEActivity = true)
+@EActivity(R.layout.activity_login_input)
+```
+
 # ActivityRouter
 
 ### [English README.md here](https://github.com/mzule/ActivityRouter/blob/master/README-en.md)
