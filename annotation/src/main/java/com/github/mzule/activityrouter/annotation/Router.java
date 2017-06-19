@@ -30,4 +30,7 @@ public @interface Router {
     String[] charParams() default "";
 
     String[] transfer() default "";
+    
+    boolean isEActivity() default false;
+
 }
