@@ -181,7 +181,11 @@ public class RouterProcessor extends AbstractProcessor {
                     return false;
                 }
                 if (element.getKind() == ElementKind.CLASS) {
+                  if (router.isEActivity()) {
+                        mapMethod.addStatement("com.github.mzule.activityrouter.router.Routers.map($S,$L_.class, null, extraTypes)", format, className);
+                    } else {
                     mapMethod.addStatement("com.github.mzule.activityrouter.router.Routers.map($S, $T.class, null, extraTypes)", format, className);
+                    }
                 } else {
                     mapMethod.addStatement("com.github.mzule.activityrouter.router.Routers.map($S, null, " +
                             "new MethodInvoker() {\n" +
