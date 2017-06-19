@@ -7,7 +7,7 @@ ext {
     bintrayRepo = 'maven'
     bintrayName = 'activity-router-compiler'
 
-    publishedGroupId = 'com.github.mzule.activityrouter'
+    publishedGroupId = 'com.github.mzule.activityrouter.annotation'
     libraryName = 'Compiler'
     artifact = 'compiler'
 
@@ -21,6 +21,8 @@ ext {
     developerId = 'mzule'
     developerName = 'Cao Dongping'
     developerEmail = 'mzule4j@gmail.com'
+    
+    modifyName = 'lileltp@163.com'
 
     licenseName = 'The Apache Software License, Version 2.0'
     licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
